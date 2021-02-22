@@ -13,7 +13,7 @@ client.on('ready', () =>{
         showWarns: false
     })
     .setDefaultPrefix('$')
-    .setBotOwner(['715466982123765822','748087501641613383','492306801316855810'])
+    .setBotOwner(['464029590470262806','715466982123765822','748087501641613383','492306801316855810'])
 });
 client.on('message', message =>{
     if (message.author.bot) return;

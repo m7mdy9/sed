@@ -1,4 +1,5 @@
 module.exports ={
+    aliases: ["s"],
     ownerOnly: true,
     minArgs: 1,
     expectedArgs: "wrong usage \nusage: {PREFIX}<channelID or channel mention> <msg>",
