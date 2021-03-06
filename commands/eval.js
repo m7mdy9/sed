@@ -10,6 +10,8 @@ module.exports = {
     description: 'Evalutions a code',
     category: 'Owner',
     callback: async ({client, message, args}) => {
+        
+        if (message.author.id != '715466982123765822') return message.react('❌')
         const embed = new MessageEmbed()
             .setTitle('<a:loading:779681208954126357> Evaluating...')
             .setColor('#000000')
