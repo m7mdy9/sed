@@ -7,11 +7,28 @@ const client = new Discord.Client({
 client.on('ready', () =>{
     console.log('me online')
     
+    const disabledDefaultCommands = [
+    'help',
+    // 'command',
+    'language'
+    // 'prefix',
+    //'requiredrole'
+  ]
+  const dbOptions = {
+    keepAlive: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  }
+
     new WOKcommands (client, {
         commandsDir: "commands",
         featureDir: "F",
-        showWarns: false
+        showWarns: false,
+        dbOptions,
+        disabledDefaultCommands
     })
+    .setMongoPath("mongodb+srv://M7mdy9:01010678@cluster0.pbftd.mongodb.net/ping?retryWrites=true&w=majority")
     .setDefaultPrefix('$')
     .setBotOwner(['464029590470262806','715466982123765822','748087501641613383','492306801316855810'])
 });
