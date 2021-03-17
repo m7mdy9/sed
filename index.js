@@ -7,13 +7,6 @@ const client = new Discord.Client({
 client.on('ready', () =>{
     console.log('me online')
     
-    const disabledDefaultCommands = [
-    'help',
-    // 'command',
-    'language'
-    // 'prefix',
-    //'requiredrole'
-  ]
   const dbOptions = {
     keepAlive: true,
     useNewUrlParser: true,
@@ -25,8 +18,7 @@ client.on('ready', () =>{
         commandsDir: "commands",
         featureDir: "F",
         showWarns: false,
-        dbOptions,
-        disabledDefaultCommands
+        dbOptions
     })
     .setMongoPath("mongodb+srv://M7mdy9:01010678@cluster0.pbftd.mongodb.net/ping?retryWrites=true&w=majority")
     .setDefaultPrefix('$')
