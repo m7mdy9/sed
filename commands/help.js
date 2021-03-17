@@ -1,5 +1,5 @@
 module.exports ={
-    callback: ({ message }) =>{
-        console.log('nothing')
+    callback: ({ message, args }) =>{
+        console.log('bruh')
     }
 }
