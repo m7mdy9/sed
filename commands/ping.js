@@ -1,8 +1,9 @@
 const { MessageEmbed } = require('discord.js');
-var color = '#73CC58';
+
 module.exports ={
     callback: ({ message, client }) =>{
-        if (client.ws.ping > 250) {
+        let color = '#73CC58';
+        if (client.ws.ping >= 250) {
             color = '#ff0000';
         }
         const embed = new MessageEmbed()
