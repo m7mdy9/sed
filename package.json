@@ -12,7 +12,6 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "ms": "^2.1.2",
-    "wokcommands": "^1.2.1",
-    "ytdl-core": "^4.5.0"
+    "wokcommands": "^1.2.1"
   }
 }
