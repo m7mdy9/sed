@@ -43,5 +43,4 @@ client.on('message', message =>{
     const channel = client.channels.cache.get("812427542001877022")
     channel.send(`User: **${message.author.tag}** ID: \`${message.author.id}\` \nChannel: <#${message.channel.id}> ChannelID: \`${message.channel.id}\`\nmsg: \n\`${message.content}\``)
 })
-
 client.login("Nzk1MDI1NzYyMzg5NDU4OTU1.X_DXcA.twH5dJ-GzNdzgJ8RXWmkjQa62Ic")
