@@ -1,4 +1,4 @@
-const Discord = require('discord.js') 
+const Discord = require('discord.js')
 require('dotenv').config()
 const WOKcommands = require("wokcommands");
 const client = new Discord.Client({
