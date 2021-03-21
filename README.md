@@ -6,8 +6,9 @@ discord.js dotenv wokcommands ms
 # Setup
 The bot won't work without adding .env file (it's removed because token, db uri are secret)
 Put this in .env 
-`TOKEN=BOTTOKEN
-DB=MONGODBURI`
+```env
+TOKEN=BOTTOKEN
+DB=MONGODBURI```
 
 make sure to replace BOTTOKEN with your bot token and MONGODBURI with your mongo database uri
 
